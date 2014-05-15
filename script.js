@@ -25,12 +25,12 @@ $(document).ready(function(){
 	}
 	
 	var Newtonlaw = function(number){
-		Random_Val = Math.floor((Math.random()*450)+350);
+		Random_Val = Math.floor((Math.random()*430)+370);
 		$("#a"+number).animate({"top" : Random_Val} , "fast");
 	}
 	
 	var falling = function(){
-		if(shakepoint%5 === 0){
+		if(shackepoint > 0 && shakepoint%5 === 0){
 			Newtonlaw(applestack);
 			applestack++;
 		}

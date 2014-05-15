@@ -13,11 +13,11 @@ $(document).ready(function(){
 	var j=0;
 
 	var shake = function(){
-		if(temp_x > 0 && flag === -1){ 
+		if(temp_x > 4 && flag === -1){ 
 			shakepoint++;          
 			flag = 1;             
 		}
-		else if(temp_x < 0 && flag === 1) 
+		else if(temp_x < -4 && flag === 1) 
 		{				   
 			shakepoint++;             
 			flag = -1;                 

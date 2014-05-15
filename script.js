@@ -28,36 +28,8 @@ $(document).ready(function(){
 	}
 	
 	var Newtonlaw = function(number){
-		switch (apple[number]){
-			case 1 :
-				apple_top_val = 465;
-		                break;
-		        case 2 :
-		        	apple_top_val = 563;
-		                break;
-		        case 3 :
-		            	apple_top_val = 523;
-		                break;
-		        case 4 :
-		            	apple_top_val = 465;	            	
-		                break;
-		        case 5 :
-		            	apple_top_val = 607;	            
-		                break;
-		        case 6 :
-		            	apple_top_val = 530;
-		                break;
-		        case 7 :
-		            	apple_top_val = 489;	            
-		                break;
-		        case 8 :
-		            	apple_top_val = 559;	            
-		                break;
-		        case 9 :
-		            	apple_top_val = 479;	            
-		                break;  
-		}
-		$("#a"+apple[number]).animate({"top" : apple_top_val} , 1000);
+
+		$("#a"+apple[number]).animate({"top" : 600} , 1000);
 		appleflag = 0;
 	}
 	

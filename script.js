@@ -26,7 +26,7 @@ $(document).ready(function(){
 	
 	var Newtonlaw = function(number){
 		Random_Val = Math.floor((Math.random()*430)+370);
-		$("#a"+number).animate({"top" : Random_Val} , "fast");
+		$("#a"+number).animate({"top" : Random_Val} , 1000);
 	}
 	
 	var falling = function(){

@@ -1,6 +1,6 @@
 $(document).ready(function(){
+	
 	console.log("ready");
-
 
 	var temp_x = 0;
 	var flag = 1;
@@ -29,15 +29,10 @@ $(document).ready(function(){
 	
 	var falling = function(){
 		if(shakepoint%5 === 0 && applestack > 10){
-			$("aVal").html(apple[applestack]);
 			Newtonlaw(applestack);
 			applestack++;
 		}
 	}
-	
-
-		
-
 
 	for(i=1;i<10;i++){
 		Random_Val = Math.floor((Math.random()*9)+1);
@@ -58,77 +53,39 @@ $(document).ready(function(){
 			}
 		}
 		apple[i] = Random_Val;
-		                
 		checkpoint2=0;
 	}
 
 
-
-
-
-
 	function handleMotionEvent(event) {
-
-
-
-
+		
 		var x = event.accelerationIncludingGravity.x;
 		var y = event.accelerationIncludingGravity.y; 
 		var z = event.accelerationIncludingGravity.z; 
 		x = Math.round(x);
 		temp_x = x;
-
-
-
-
+		
 		$("#xVal").html(Math.round(x));
 		$("#sVal").html(shakepoint);
-
-
-
+		$("aVal").html(apple[applestack]);
 
 		var maxX = window.innerWidth - $("#ball").width();
 		var maxY = window.innerHeight - $("#ball").height();
-
-
-
 
 		var orgX = parseFloat(orgX); 
 		var newX = orgX + x;
 		newX = Math.max(0, newX);
 		newX = Math.min(maxX, newX);
 
-
-
-
-
-
-
-
 		var orgY = $("#ball").css("top");
 		orgY = parseFloat(orgY);
 		var newY = orgY - y;
 		newY = Math.max(0, newY);
 		newY = Math.min(maxY, newY);
-
-
-
-
 	}
-
-
-
-
-
-
-
 
 	window.addEventListener("devicemotion", handleMotionEvent, true);
 	setInterval(shake,100); 
 	setInterval(falling,100);
 	
-
-
-
-
 });

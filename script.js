@@ -69,7 +69,7 @@ $(document).ready(function(){
 		
 		$("#xVal").html(Math.round(x));
 		$("#sVal").html(shakepoint);
-		$("#aVal").html(applestack);
+		$("#aVal").html(apple);
 
 		var maxX = window.innerWidth - $("#ball").width();
 		var maxY = window.innerHeight - $("#ball").height();

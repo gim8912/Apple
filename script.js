@@ -11,7 +11,6 @@ $(document).ready(function(){
 	var apple = [0,0,0,0,0,0,0,0,0];
 
 	var shake = function(){
-
 		if(temp_x > 0 && flag === -1){ 
 			shakepoint++;          
 			flag = 1;             
@@ -22,18 +21,20 @@ $(document).ready(function(){
 			flag = -1;                 
 		}
 	}
-	var falling = function(){
-		if(shakepoint%5 === 0 && applestack > 10){
-			Newtonlaw(applestack);
-			applestack++;
-
-		}
-	}
 	
 	var Newtonlaw = function(number){
 		Random_Val = Math.floor((Math.random()*600)+500);
 		//$("#a"+number).animate({"top" : Random_Val , 1000, null);});
 	}
+	
+	var falling = function(){
+		if(shakepoint%5 === 0 && applestack > 10){
+			Newtonlaw(applestack);
+			applestack++;
+		}
+	}
+	
+
 		
 
 
@@ -44,7 +45,7 @@ $(document).ready(function(){
 			if(checkpoint2==1){
 				j=0;
 			}
-			if(card1[j]==Random_Val){
+			if(apple[j]==Random_Val){
 				Random_Val = Math.floor((Math.random()*9)+1); 
 				j=0; 
 				if(apple[j]==Random_Val){

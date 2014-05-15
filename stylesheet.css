@@ -1,0 +1,83 @@
+html, body {
+	margin:0;
+}
+
+div{
+	overflow: hidden;
+	position: absolute;
+}
+
+#rap{
+	width: 600px;
+	height: 700px;
+	background-image:url('img/tree.png'); 
+}
+#a1{
+	width: 40px;
+	height: 40px;
+	background-image:url('img/apple01.png');
+	top: 285px;
+	left: 90px;
+}
+#a2{
+	width: 34px;
+	height: 34px;
+	background-image:url('img/apple02.png');
+	top: 187px;
+	left: 131px;
+}
+#a3{
+	width: 45px;
+	height: 47px;
+	background-image:url('img/apple03.png');
+	top: 227px;
+	left: 192px;
+}
+#a4{
+	width: 37px;
+	height: 40px;
+	background-image:url('img/apple04.png');
+	top: 285px;
+	left: 229px;
+}
+#a5{
+	width: 40px;
+	height: 40px;
+	background-image:url('img/apple05.png');
+	top: 143px;
+	left: 296px;
+}
+#a6{
+	width: 36px;
+	height: 36px;
+	background-image:url('img/apple06.png');
+	top: 220px;
+	left: 345px;
+}
+#a7{
+	width: 40px;
+	height: 40px;
+	background-image:url('img/apple07.png');
+	top: 261px;
+	left: 405px;
+}
+#a8{
+	width: 37px;
+	height: 40px;
+	background-image:url('img/apple08.png');
+	top: 191px;
+	left: 434px;
+}
+#a9{
+	width: 40px;
+	height: 40px;
+	background-image:url('img/apple09.png');
+	top: 271px;
+	left: 517px;
+}
+#leaff{
+	width: 600px;
+	height: 600px;
+	background-image:url('img/leaf.png');
+	
+}

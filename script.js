@@ -28,7 +28,7 @@ $(document).ready(function(){
 	
 	var Newtonlaw = function(number){
 		Random_Val = Math.floor((Math.random()*460)+400);
-		$("#a"+number).animate({"top" : Random_Val} , 1000);
+		$("#a"+apple[number]).animate({"top" : Random_Val} , 1000);
 		appleflag = 0;
 	}
 	

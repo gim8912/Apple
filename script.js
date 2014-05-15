@@ -39,13 +39,13 @@ $(document).ready(function(){
 	for(i=1;i<10;i++){
 		Random_Val = Math.floor((Math.random()*9)+1);
 		                                  
-		for(j=0;j<i;j++){  
+		for(j=1;j<i;j++){  
 			if(checkpoint2==1){
-				j=0;
+				j=1;
 			}
 			if(apple[j]==Random_Val){
 				Random_Val = Math.floor((Math.random()*9)+1); 
-				j=0; 
+				j=1; 
 				if(apple[j]==Random_Val){
 					checkpoint2=1;
 				}

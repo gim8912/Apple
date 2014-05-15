@@ -4,6 +4,7 @@ $(document).ready(function(){
 
 	var temp_x = 0;
 	var flag = 1;
+	var appleflag = 1;
 	var shakepoint = 0;
 	var checkpoint2 = 0;
 	var applestack = 1;
@@ -20,17 +21,19 @@ $(document).ready(function(){
 		else if(temp_x < -4 && flag === 1) 
 		{				   
 			shakepoint++;             
-			flag = -1;                 
+			flag = -1;
+			appleflag = 1;
 		}
 	}
 	
 	var Newtonlaw = function(number){
-		Random_Val = Math.floor((Math.random()*410)+400);
+		Random_Val = Math.floor((Math.random()*460)+400);
 		$("#a"+number).animate({"top" : Random_Val} , 1000);
+		appleflag = 0;
 	}
 	
 	var falling = function(){
-		if(shakepoint > 0 && shakepoint%5 === 0){
+		if(shakepoint > 0 && shakepoint%5 === 0 && appleflag === 1){
 			Newtonlaw(applestack);
 			applestack++;
 		}

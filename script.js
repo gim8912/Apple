@@ -8,7 +8,7 @@ $(document).ready(function(){
 	var checkpoint2 = 0;
 	var applestack = 1;
 	var Random_Val =0; 
-	var apple = [0,0,0,0,0,0,0,0,0];
+	var apple = [0,0,0,0,0,0,0,0,0,0];
 
 	var shake = function(){
 		if(temp_x > 0 && flag === -1){ 
@@ -29,6 +29,7 @@ $(document).ready(function(){
 	
 	var falling = function(){
 		if(shakepoint%5 === 0 && applestack > 10){
+			$("aVal").html(apple[applestack]);
 			Newtonlaw(applestack);
 			applestack++;
 		}
@@ -80,7 +81,7 @@ $(document).ready(function(){
 
 
 
-		$("#xVal").html(Math.round(y));
+		$("#xVal").html(Math.round(x));
 		$("#sVal").html(shakepoint);
 
 

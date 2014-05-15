@@ -29,31 +29,31 @@ $(document).ready(function(){
 	
 	var Newtonlaw = function(number){
 		switch (apple[number]){
-			case "1" :
+			case 1 :
 				apple_top_val = 465;
 		                break;
-		        case "2" :
+		        case 2 :
 		        	apple_top_val = 563;
 		                break;
-		        case "3" :
+		        case 3 :
 		            	apple_top_val = 523;
 		                break;
-		        case "4" :
+		        case 4 :
 		            	apple_top_val = 465;	            	
 		                break;
-		        case "5" :
+		        case 5 :
 		            	apple_top_val = 607;	            
 		                break;
-		        case "6" :
+		        case 6 :
 		            	apple_top_val = 530;
 		                break;
-		        case "7" :
+		        case 7 :
 		            	apple_top_val = 489;	            
 		                break;
-		        case "8" :
+		        case 8 :
 		            	apple_top_val = 559;	            
 		                break;
-		        case "9" :
+		        case 9 :
 		            	apple_top_val = 479;	            
 		                break;  
 		}

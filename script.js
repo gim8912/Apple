@@ -74,8 +74,8 @@ $(document).ready(function(){
 		var x = event.accelerationIncludingGravity.x;
 		var y = event.accelerationIncludingGravity.y; 
 		var z = event.accelerationIncludingGravity.z; 
-		y = Math.round(y);
-		temp_y = y;
+		x = Math.round(y);
+		temp_x = x;
 
 
 

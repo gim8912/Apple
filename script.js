@@ -9,6 +9,8 @@ $(document).ready(function(){
 	var applestack = 1;
 	var Random_Val =0; 
 	var apple = [0,0,0,0,0,0,0,0,0,0];
+	var i=0;
+	var j=0;
 
 	var shake = function(){
 		if(temp_x > 0 && flag === -1){ 

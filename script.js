@@ -30,7 +30,7 @@ $(document).ready(function(){
 	}
 	
 	var falling = function(){
-		if(shakepoint%5 === 0 && applestack > 10){
+		if(shakepoint%5 === 0){
 			Newtonlaw(applestack);
 			applestack++;
 		}
